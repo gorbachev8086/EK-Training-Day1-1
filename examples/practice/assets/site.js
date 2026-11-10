@@ -185,7 +185,7 @@
       if (!textOf(paragraph).trim()) continue;
       const element = node('p'); appendRichText(element, paragraph); textContainer.append(element);
     }
-    if (!textContainer.childElementCount && !slide.tables.length) textContainer.append(node('p', '', '이 페이지는 이미지 중심으로 구성되어 있습니다. 위의 슬라이드에서 내용을 확인해 주세요.'));
+    if (!textContainer.childElementCount && !slide.tables.length) textContainer.append(node('p', '', '이 페이지는 이미지 중심으로 구성되어 있습니다. 아래 원본 슬라이드에서 내용을 확인해 주세요.'));
 
     slide.tables.forEach((rows, tableIndex) => {
       if (!Array.isArray(rows) || !rows.length) return;

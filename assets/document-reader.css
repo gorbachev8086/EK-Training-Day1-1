@@ -1,0 +1,24 @@
+.reading-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:16px 0}
+.reading-controls .button[aria-pressed=true]{background:#9c390b;color:#fff;border-color:#9c390b}
+.reading-controls #copy-body{margin-left:auto}.copy-status{font-size:12px;color:#705137;min-height:18px;margin:0 0 8px}
+body:not(.slide-reading) .transcript{display:block;margin:0 0 22px;box-shadow:0 2px 10px #41290006}
+body:not(.slide-reading) .transcript>summary{display:none}
+body:not(.slide-reading) .transcript-inner{border:0;padding:30px 36px}
+body:not(.slide-reading) #slide-text p{font-size:16px;line-height:1.9;margin-bottom:14px;user-select:text}
+body:not(.slide-reading) .table-wrapper{margin-top:24px}
+body:not(.slide-reading) .table-wrapper table{font-size:15px;line-height:1.75;user-select:text}
+body:not(.slide-reading) .table-wrapper tr:first-child{background:#f6eee4;font-weight:700}
+body:not(.slide-reading) .table-wrapper td:first-child{min-width:72px}
+body:not(.slide-reading) #slide-links{font-size:14px}
+.source-figure{margin:20px 0;border:1px solid #e2ddd5;border-radius:8px;background:#fff}
+.source-figure>summary{padding:16px 20px;font-size:13px;color:#874324;cursor:pointer;font-weight:700}
+.source-figure .slide-card{border:0;box-shadow:none}
+body:not(.slide-reading) .source-figure .slide-image-wrap{height:auto!important;aspect-ratio:16/9}
+body:not(.slide-reading) .source-figure #slide-image{width:100%;max-height:none}
+.visual-only-note{font-size:13px;line-height:1.7;padding:12px 16px;background:#fff6e9;border-left:3px solid #d36728}
+.slide-reading .transcript,.slide-reading .copy-status,.slide-reading #copy-body,.slide-reading .visual-only-note{display:none}
+.slide-reading .source-figure{border:0;margin:0}.slide-reading .source-figure>summary{display:none}
+.catalog-nav{flex-wrap:wrap}.catalog-nav a{white-space:nowrap}
+@media(min-width:801px) and (max-width:1350px){.catalog-topbar.topbar{height:96px;flex-wrap:wrap;gap:4px 12px}:root{--topbar-height:96px}}
+@media(max-width:800px){body:not(.slide-reading) .transcript-inner{padding:20px 18px}.catalog-nav{gap:4px}.catalog-nav a{font-size:11px}.reading-controls .button{font-size:12px;padding:8px 12px}.reading-controls #copy-body{margin-left:0}body:not(.slide-reading) #slide-text p{font-size:15px}}
+@media print{.reading-controls,.copy-status,.source-figure,.visual-only-note{display:none!important}.transcript{display:block!important}.transcript>summary{display:none!important}.transcript-inner{padding:0!important}}
